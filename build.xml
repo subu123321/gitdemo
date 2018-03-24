@@ -1,0 +1,14 @@
+<project default="target3">
+
+    <target name="target1">
+        <echo> "Hello world 1 !! </echo>
+    </target>
+
+    <target name="target2" depends="target1">
+        <echo> "Hello world 2 !! </echo>
+    </target>
+
+    <target name="target3" depends="target2">
+        <echo> "Hello world 3 !! </echo>
+    </target>
+</project>
